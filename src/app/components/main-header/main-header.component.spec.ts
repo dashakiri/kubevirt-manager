@@ -24,7 +24,7 @@ describe('MainHeaderComponent', () => {
   });
   it('should contain nav-title', () => {
     const componentDoc: DebugElement = fixture.debugElement;
-    const componentElem = componentDoc.query(By.css('#nav-title'))
+    const componentElem = componentDoc.query(By.css('#nav-link-title'))
     const contentValue = componentElem.nativeElement;
     expect(contentValue.textContent).toContain('MKE Virtualization');
   });
