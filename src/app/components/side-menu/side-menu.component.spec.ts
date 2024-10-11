@@ -28,12 +28,6 @@ describe('SideMenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('should set brand-text', () => {
-    const componentDoc: DebugElement = fixture.debugElement;
-    const componentElem = componentDoc.query(By.css('.brand-text'))
-    const contentValue = componentElem.nativeElement;
-    expect(contentValue.textContent).toContain('kubevirt-manager');
-  });
   it('should contain Dashboard item', () => {
     const componentDoc: DebugElement = fixture.debugElement;
     const componentElem = componentDoc.query(By.css('.fa-tachometer-alt'))

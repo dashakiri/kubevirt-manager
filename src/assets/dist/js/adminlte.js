@@ -1089,6 +1089,9 @@
    * ====================================================
    */
 
+  // var Fullscreen is used to expand view page to the whole screen. For now this code isn't used as not needed. In order to use it add 
+  // the Fullscreen class to an icon, similar to this: <a class="nav-link" data-widget="fullscreen" href="#" role="button" alt="#"><i class="fas fa-expand-arrows-alt"></i></a>.
+
   var Fullscreen = /*#__PURE__*/function () {
     function Fullscreen(_element, _options) {
       this.element = _element;
@@ -1964,6 +1967,9 @@
    * Class Definition
    * ====================================================
    */
+
+  // var PushMenu is used to collapce and expand the sidebar. For now this code is not used as not needed. In order to use it add 
+  // the PushMenu class to an icon, similar to this: <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>.
 
   var PushMenu = /*#__PURE__*/function () {
     function PushMenu(element, options) {

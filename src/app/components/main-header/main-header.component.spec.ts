@@ -26,7 +26,7 @@ describe('MainHeaderComponent', () => {
     const componentDoc: DebugElement = fixture.debugElement;
     const componentElem = componentDoc.query(By.css('#nav-title'))
     const contentValue = componentElem.nativeElement;
-    expect(contentValue.textContent).toContain('Dashboard');
+    expect(contentValue.textContent).toContain('MKE Virtualization');
   });
   it('should contain main-header item', () => {
     const componentDoc: DebugElement = fixture.debugElement;
@@ -34,9 +34,9 @@ describe('MainHeaderComponent', () => {
     const contentValue = componentElem.nativeElement;
     expect(contentValue).toBeTruthy();
   });
-  it('should contain expand arrows item', () => {
+  it('should contain logo icon', () => {
     const componentDoc: DebugElement = fixture.debugElement;
-    const componentElem = componentDoc.query(By.css('.fa-expand-arrows-alt'))
+    const componentElem = componentDoc.query(By.css('#brand-image'))
     const contentValue = componentElem.nativeElement;
     expect(contentValue).toBeTruthy();
   });

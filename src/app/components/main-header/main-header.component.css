@@ -1,0 +1,18 @@
+.main-header {
+    height: 55px;
+    border-bottom: none;
+    margin-left: 0px !important;
+    background: linear-gradient(90deg, #00f7db, #1aaaff);
+}
+
+.nav-title {
+    padding-top: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--LT1);
+}
+
+.brand-link {
+    background-color: transparent !important;
+    color: var(--LT1);
+}

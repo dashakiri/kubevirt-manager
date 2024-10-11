@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --blue: #007bff;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --link: #3ea8ff;
+    --secondary: #6c757d;
+    --success: #2a9546;
+    --info: #0073ec;
+    --warning: #ff9f19;
+    --danger: #e93535;
+    --light: #f8f9fa;
+    --carbon: #32343B;
+    --LT1: #121212;
+    --LT2: #2b3f55;
+    --LT3: #48596c;
+    --LT4: #657484;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-open-sans: "Open Sans", Roboto, sans-serif;
+}
+
+body {
+  font-family: "Open Sans", Roboto, sans-serif;
+}
