@@ -1,0 +1,10 @@
+.main-footer {
+    text-align: end;
+    border: none;
+    color: var(--LT4);
+    position: unset !important;
+}
+
+.copyright-text {
+    font-size: 12px;
+}

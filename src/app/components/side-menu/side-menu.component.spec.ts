@@ -100,4 +100,10 @@ describe('SideMenuComponent', () => {
     const contentValue = componentElem.nativeElement;
     expect(contentValue).toBeTruthy();
   });
+  it('should contain version', () => {
+    const componentDoc: DebugElement = fixture.debugElement;
+    const componentElem = componentDoc.query(By.css('.version'))
+    const contentValue = componentElem.nativeElement;
+    expect(contentValue).toBeTruthy();
+  });
 });

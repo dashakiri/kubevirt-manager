@@ -7,68 +7,79 @@
     <!-- Sidebar Menu -->
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <li class="nav-item">
-          <a routerLink="/" class="nav-link" alt="#" title="Dashboard...">
+        <li class="nav-item" id="nav-item" >
+          <a routerLink="/" class="nav-link" alt="#" title="Dashboard..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>Dashboard</p>
           </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/vmlist" class="nav-link" alt="#" title="Virtual Machines...">
+          <a routerLink="/vmlist" class="nav-link" alt="#" title="Virtual Machines..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-desktop"></i>
             <p>Virtual Machines</p>
           </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/vmpools" class="nav-link" alt="#" title="Virtual Machine Pools...">
+          <a routerLink="/vmpools" class="nav-link" alt="#" title="Virtual Machine Pools..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-server"></i>
               <p>VM Pools</p>
           </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/autoscale" class="nav-link" alt="#" title="Auto Scaling...">
+          <a routerLink="/autoscale" class="nav-link" alt="#" title="Auto Scaling..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-expand-alt"></i>
               <p>Auto Scaling</p>
           </a>
         </li>
         <li class="nav-item" *ngIf="capkCheck">
-            <a routerLink="/kcluster" class="nav-link" alt="#" title="Clusters...">
+            <a routerLink="/kcluster" class="nav-link" alt="#" title="Clusters..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+              true}">
               <i class="nav-icon fas fa-cubes"></i>
               <p>Clusters</p>
             </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/nodelist" class="nav-link" alt="#" title="Nodes...">
+          <a routerLink="/nodelist" class="nav-link" alt="#" title="Nodes..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-hdd"></i>
             <p>Nodes</p>
           </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/dsklist" class="nav-link" alt="#" title="Disks..">
+          <a routerLink="/dsklist" class="nav-link" alt="#" title="Disks.." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-database"></i>
             <p>Data Volumes</p>
           </a>
         </li>
         <li class="nav-item">
-            <a routerLink="/citlist" class="nav-link" alt="#" title="Instance Types...">
+            <a routerLink="/citlist" class="nav-link" alt="#" title="Instance Types..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+              true}">
               <i class="nav-icon fas fa-book"></i>
               <p>Instance Types</p>
             </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/lblist" class="nav-link" alt="#" title="Load Balancers...">
+          <a routerLink="/lblist" class="nav-link" alt="#" title="Load Balancers..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-sitemap"></i>
             <p>Load Balancers</p>
            </a>
         </li>
         <li class="nav-item" *ngIf="imgCheck">
-            <a routerLink="/imagelist" class="nav-link" alt="#" title="Images...">
+            <a routerLink="/imagelist" class="nav-link" alt="#" title="Images..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+              true}">
               <i class="nav-icon fas fa-compact-disc"></i>
               <p>Images</p>
             </a>
         </li>
         <li class="nav-item">
-            <a routerLink="/sshkeys" class="nav-link" alt="#" title="SSH Keys...">
+            <a routerLink="/sshkeys" class="nav-link" alt="#" title="SSH Keys..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+              true}">
               <i class="nav-icon fas fa-key"></i>
               <p>SSH Keys</p>
             </a>
@@ -82,7 +93,8 @@
         </li>
         -->
         <li class="nav-item" *ngIf="networkCheck">
-          <a routerLink="/netlist" class="nav-link" alt="#" title="Network...">
+          <a routerLink="/netlist" class="nav-link" alt="#" title="Network..." routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+            true}">
             <i class="nav-icon fas fa-network-wired"></i>
             <p>Network</p>
           </a>
@@ -90,6 +102,6 @@
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
-
+    <p class="version">Version 1.4.1</p>
   </div>
 </aside>

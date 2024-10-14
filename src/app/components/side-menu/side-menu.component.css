@@ -1,10 +1,47 @@
 .main-sidebar {
     background-color: var(--backgroundLT2);
-    position: fixed;
-    top: 0;
-    left: 0;
+    top: 55px;
+    /* display: block; */
+}
+
+.main-sidebar .sidebar {
+    margin-top: 0 !important;
+}
+
+.brand-link {
+    width: 100%;
+}
+
+.nav-sidebar {
+    padding: 0 !important;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: var(--LT1) !important;
+    border-radius: 0%;
+}
+
+.nav-link:hover {
+    width: 250px !important;
+    margin-left: -5px !important;
+    background-color: rgba(9, 156, 236, 0.07) !important;
+}
+
+.active-link {
+    width: 250px !important;
+    margin-left: -8px !important;
+    background-color: rgba(9, 156, 236, 0.07) !important;
+    border-left: 4px solid #0ED0EE;
+}
+
+.version {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--LT4);
+    padding: 16px;
+    border-left: 4px solid transparent;
+    position: absolute;
     bottom: 0;
-    z-index: 100;
-    display: block;
-    overflow-y: auto;
+    margin-bottom: 0;
 }

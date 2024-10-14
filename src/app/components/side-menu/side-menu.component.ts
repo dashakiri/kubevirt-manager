@@ -14,6 +14,12 @@ export class SideMenuComponent implements OnInit {
     capkCheck: boolean = false;
     imgCheck: boolean = false;
 
+    selected: string = '/';
+
+    setSelected(selected: string): void {
+        this.selected = selected;
+    }
+    
     constructor(
         private k8sApisService: K8sApisService
     ) { }

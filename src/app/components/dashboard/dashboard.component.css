@@ -1,3 +1,12 @@
 .content-wrapper {
     background-color: var(--white);
 }
+
+.bg-info {
+    background-color: var(--backgroundLT2) !important;
+    color: var(--LT4) !important;
+}
+
+.small-box-footer {
+    color: var(--LT4) !important;
+}

@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-header.component.css']
 })
 export class MainHeaderComponent implements OnInit {
+  classToggled: boolean = false;
+
+  public toggleField() {
+    this.classToggled = !this.classToggled;  
+  }
 
   constructor() { }
 

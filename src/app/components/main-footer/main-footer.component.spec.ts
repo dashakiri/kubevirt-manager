@@ -22,12 +22,6 @@ describe('MainFooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('should contain version', () => {
-    const componentDoc: DebugElement = fixture.debugElement;
-    const componentElem = componentDoc.nativeElement;
-    const contentValue = componentElem.querySelector('b');
-    expect(contentValue.textContent).toContain('Version');
-  });
   it('should contain main-footer item', () => {
     const componentDoc: DebugElement = fixture.debugElement;
     const componentElem = componentDoc.query(By.css('.main-footer'))

@@ -1,8 +1,14 @@
 .main-header {
     height: 55px;
+    width: 100vw !important;
+    position: fixed;
     border-bottom: none;
     margin-left: 0px !important;
     background: linear-gradient(90deg, #00f7db, #1aaaff);
+}
+
+#brand-image{
+    position: fixed;
 }
 
 .nav-link-title {
@@ -10,9 +16,43 @@
     font-size: 20px;
     font-weight: 600;
     color: var(--LT1);
+    position: fixed;
+    left: 60px;
 }
 
 .brand-link {
+    margin: 0;
     background-color: transparent !important;
     color: var(--LT1);
+}
+
+.nav-expand-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 992px){
+    .nav-expand-link {
+        color: var(--LT1);
+        padding: 16px;
+        clip: unset;
+        width: 55px;
+        height: 55px;
+        margin: 0;
+        clip-path: none;
+        right: 0;
+    }
+}
+
+.nav-item:visited {
+    background-color: rgba(9, 156, 236, 0.05) !important;
 }
