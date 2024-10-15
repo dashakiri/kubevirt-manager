@@ -64,7 +64,14 @@ export class VmlistComponent implements OnInit {
     async getNodes(): Promise<void> {
         this.nodeList = [];
         try {
-            let currentNode = new K8sNode;
+            let currentNode = new K8sNode();
+            /* auto-selects node when power on vm */
+            currentNode.name = "auto-select";
+            for(let j = 0; j < this.vmList.length; j++) {
+                if (this.vmList[j].nodeSel == currentNode.name)
+                    currentNode.vmlist.push(this.vmList[j]);
+            }
+            this.nodeList.push(currentNode);
             const data = await lastValueFrom(this.k8sService.getNodes());
             let nodes = data.items;
             for (let i = 0; i < nodes.length; i++) {
@@ -76,14 +83,7 @@ export class VmlistComponent implements OnInit {
                 }
                 this.nodeList.push(currentNode);
             }
-            /* auto-selects node when power on vm */
-            currentNode = new K8sNode();
-            currentNode.name = "auto-select";
-            for(let j = 0; j < this.vmList.length; j++) {
-                if (this.vmList[j].nodeSel == currentNode.name)
-                    currentNode.vmlist.push(this.vmList[j]);
-            }
-            this.nodeList.push(currentNode);
+
         } catch (e: any) {
             console.log(e.error.message);
         }
