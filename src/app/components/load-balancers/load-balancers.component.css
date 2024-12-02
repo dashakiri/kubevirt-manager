@@ -1,3 +1,7 @@
 .content-wrapper {
     background-color: var(--white);
 }
+
+.modal {
+    overflow: auto !important;
+}
